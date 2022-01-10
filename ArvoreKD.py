@@ -21,6 +21,7 @@ from heapq import heapify, heappush, heappushpop, nlargest, nsmallest
 class Node:
     left = None
     right = None
+    dimension = None
     plane = None
     point = None
     def __init__(self):
@@ -31,10 +32,6 @@ class Node:
     def __le__(self,other):
         a = False
         return a
-    def setDimension(self, dimension):
-        self.dimension = dimension
-    def setValue(self, value):
-        self.value = float(value)
 
 
 # In[3]:
